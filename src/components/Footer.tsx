@@ -1,7 +1,6 @@
 import { Box, Container, Grid, Stack, Typography } from '@mui/material';
 import React from 'react';
 import { cleanPath } from '../utils/queryParams.utils';
-import { AppLink } from './AppLink';
 import { ImageWrapper } from './ImageWrapper';
 
 /**
@@ -17,18 +16,7 @@ export const Footer: React.FC = () => {
     >
       <Container>
         <Grid container>
-          <Grid item md={6}>
-            <Stack
-              direction="row"
-              useFlexGap
-              sx={{
-                flexWrap: 'wrap',
-              }}
-            >
-              <AppLink to="/">Home</AppLink>
-            </Stack>
-          </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12}>
             <Stack
               direction="row"
               alignItems="center"

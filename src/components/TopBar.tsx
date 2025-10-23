@@ -47,7 +47,7 @@ export const TopBar: React.FC = () => {
             spacing={3}
             sx={{
               alignItems: 'center',
-              marginLeft: 8,
+              paddingLeft: '20px',
             }}
           >
             <AppLink to="/about">
