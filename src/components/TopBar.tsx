@@ -24,23 +24,22 @@ export const TopBar: React.FC = () => {
       <Toolbar>
         <Stack
           direction="row"
+          spacing={2}
           sx={{
             alignItems: 'center',
             flexGrow: 1,
           }}
         >
           <AppLink to="/">
-            <ImageWrapper height={30}>
+            <ImageWrapper height={40}>
               <img
-                src={cleanPath(
-                  `${import.meta.env.BASE_URL}/strudel-logo-icon.png`
-                )}
+                src={cleanPath(`${import.meta.env.BASE_URL}/dwr-logo.jpg`)}
               />
             </ImageWrapper>
           </AppLink>
           <AppLink to="/">
             <Typography variant="h6" component="div" fontWeight="bold">
-              My Project
+              HRL Data Platform
             </Typography>
           </AppLink>
         </Stack>
