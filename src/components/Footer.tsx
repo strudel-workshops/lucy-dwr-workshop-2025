@@ -18,14 +18,25 @@ export const Footer: React.FC = () => {
       <Container>
         <Grid container>
           <Grid item md={6}>
-            <Stack
-              direction="row"
-              useFlexGap
-              sx={{
-                flexWrap: 'wrap',
-              }}
-            >
-              <AppLink to="/">Home</AppLink>
+            <Stack spacing={2}>
+              <Stack
+                direction="row"
+                useFlexGap
+                sx={{
+                  flexWrap: 'wrap',
+                }}
+              >
+                <AppLink to="/">Home</AppLink>
+              </Stack>
+              <Box>
+                <ImageWrapper height={50}>
+                  <img
+                    src={cleanPath(`${import.meta.env.BASE_URL}/dwr-logo.png`)}
+                    alt="California Department of Water Resources"
+                    style={{ objectFit: 'contain' }}
+                  />
+                </ImageWrapper>
+              </Box>
             </Stack>
           </Grid>
           <Grid item md={6}>

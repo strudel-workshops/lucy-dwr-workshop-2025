@@ -34,8 +34,13 @@ function Register() {
       >
         <Stack spacing={4}>
           {/* CUSTOMIZE: the registration page title */}
-          <Typography variant="h6" component="h1">
-            Register as a data contributor
+          <Typography
+            variant="h6"
+            component="h1"
+            fontWeight="bold"
+            color="navy"
+          >
+            Get started as a contributor
           </Typography>
           <Box>
             <Typography fontWeight="medium" mb={1}>
@@ -65,17 +70,17 @@ function Register() {
                 {
                   label: 'Step 1',
                   value:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ',
+                    'Complete the registration form below with your contact information and project details.',
                 },
                 {
                   label: 'Step 2',
                   value:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ',
+                    'Submit your registration and await approval from our team. You will receive a confirmation email upon successful submission.',
                 },
                 {
                   label: 'Step 3',
                   value:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ',
+                    'Once approved, access your contributor portal to upload datasets, manage your contributions, and track submission status.',
                 },
               ]}
             />
