@@ -1,0 +1,329 @@
+[
+  {
+    "id": "proj-001",
+    "name": "Sacramento River Side Channel Restoration",
+    "tributarySystem": "Upper Sacramento River",
+    "habitatType": "Side-channel rearing",
+    "targetSpecies": ["Winter-run Chinook", "Spring-run Chinook", "Splittail"],
+    "implementingEntity": "California Department of Fish and Wildlife",
+    "status": "Completed",
+    "year": 2023,
+    "areaAcres": 45,
+    "assessmentType": "Biological Effectiveness",
+    "description": "Restored side channel habitat to provide juvenile salmon rearing opportunities and refuge during high flows.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-122.3654, 40.5892],
+        [-122.3632, 40.5892],
+        [-122.3632, 40.5872],
+        [-122.3654, 40.5872],
+        [-122.3654, 40.5892]
+      ]]
+    }
+  },
+  {
+    "id": "proj-002",
+    "name": "Feather River Gravel Augmentation",
+    "tributarySystem": "Feather River",
+    "habitatType": "Spawning habitat",
+    "targetSpecies": ["Spring-run Chinook", "Fall-run Chinook"],
+    "implementingEntity": "Yuba Water Agency",
+    "status": "In Progress",
+    "year": 2024,
+    "areaAcres": 12,
+    "assessmentType": "Utilization",
+    "description": "Gravel placement project to enhance spawning habitat quality for Chinook salmon.",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-121.5447, 39.5296]
+    }
+  },
+  {
+    "id": "proj-003",
+    "name": "Yolo Bypass Floodplain Enhancement",
+    "tributarySystem": "Delta",
+    "habitatType": "Floodplain restoration",
+    "targetSpecies": ["Delta smelt", "Longfin smelt", "Splittail", "Fall-run Chinook"],
+    "implementingEntity": "California Department of Water Resources",
+    "status": "Completed",
+    "year": 2022,
+    "areaAcres": 320,
+    "assessmentType": "Biological Effectiveness",
+    "description": "Large-scale floodplain restoration to provide rearing habitat and food web support for native fish.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-121.6234, 38.5476],
+        [-121.6012, 38.5476],
+        [-121.6012, 38.5234],
+        [-121.6234, 38.5234],
+        [-121.6234, 38.5476]
+      ]]
+    }
+  },
+  {
+    "id": "proj-004",
+    "name": "American River Fish Passage Improvement",
+    "tributarySystem": "American River",
+    "habitatType": "Fish passage",
+    "targetSpecies": ["Fall-run Chinook", "Steelhead"],
+    "implementingEntity": "Sacramento County Water Agency",
+    "status": "Completed",
+    "year": 2023,
+    "areaAcres": 5,
+    "assessmentType": "Suitability",
+    "description": "Improved fish passage at diversion structure to enhance upstream migration access.",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-121.3245, 38.6582]
+    }
+  },
+  {
+    "id": "proj-005",
+    "name": "Mokelumne River Floodplain Reconnection",
+    "tributarySystem": "Mokelumne River",
+    "habitatType": "Floodplain restoration",
+    "targetSpecies": ["Fall-run Chinook", "Splittail"],
+    "implementingEntity": "East Bay Municipal Utility District",
+    "status": "In Progress",
+    "year": 2025,
+    "areaAcres": 85,
+    "assessmentType": "Consistency",
+    "description": "Reconnecting historical floodplain to provide seasonal rearing habitat and flood attenuation.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-121.2876, 38.2543],
+        [-121.2743, 38.2543],
+        [-121.2743, 38.2398],
+        [-121.2876, 38.2398],
+        [-121.2876, 38.2543]
+      ]]
+    }
+  },
+  {
+    "id": "proj-006",
+    "name": "Putah Creek In-Channel Restoration",
+    "tributarySystem": "Putah Creek",
+    "habitatType": "In-channel rearing",
+    "targetSpecies": ["Hitch", "Sacramento pikeminnow", "Tule perch"],
+    "implementingEntity": "Solano County Water Agency",
+    "status": "Planned",
+    "year": 2026,
+    "areaAcres": 18,
+    "assessmentType": "Accounting",
+    "description": "Enhance in-channel complexity with large wood placement and pool-riffle restoration for native fish.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-121.9234, 38.5123],
+        [-121.9134, 38.5123],
+        [-121.9134, 38.5056],
+        [-121.9234, 38.5056],
+        [-121.9234, 38.5123]
+      ]]
+    }
+  },
+  {
+    "id": "proj-007",
+    "name": "Tuolumne River Gravel and LWD Project",
+    "tributarySystem": "Tuolumne River",
+    "habitatType": "Spawning habitat",
+    "targetSpecies": ["Fall-run Chinook", "Spring-run Chinook"],
+    "implementingEntity": "Turlock Irrigation District",
+    "status": "Completed",
+    "year": 2023,
+    "areaAcres": 22,
+    "assessmentType": "Utilization",
+    "description": "Gravel augmentation and large woody debris placement for spawning and rearing habitat enhancement.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-120.9567, 37.6234],
+        [-120.9456, 37.6234],
+        [-120.9456, 37.6156],
+        [-120.9567, 37.6156],
+        [-120.9567, 37.6234]
+      ]]
+    }
+  },
+  {
+    "id": "proj-008",
+    "name": "Delta Tidal Wetland Creation",
+    "tributarySystem": "Delta",
+    "habitatType": "Tidal wetlands",
+    "targetSpecies": ["Delta smelt", "Longfin smelt", "White sturgeon"],
+    "implementingEntity": "California Department of Fish and Wildlife",
+    "status": "In Progress",
+    "year": 2024,
+    "areaAcres": 156,
+    "assessmentType": "Biological Effectiveness",
+    "description": "Large-scale tidal wetland restoration to enhance estuarine habitat for native fish species.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-121.8234, 38.0876],
+        [-121.7956, 38.0876],
+        [-121.7956, 38.0654],
+        [-121.8234, 38.0654],
+        [-121.8234, 38.0876]
+      ]]
+    }
+  },
+  {
+    "id": "proj-009",
+    "name": "Yuba River Side Channel Creation",
+    "tributarySystem": "Yuba River",
+    "habitatType": "Side-channel rearing",
+    "targetSpecies": ["Spring-run Chinook", "Steelhead"],
+    "implementingEntity": "Yuba Water Agency",
+    "status": "Completed",
+    "year": 2022,
+    "areaAcres": 34,
+    "assessmentType": "Biological Effectiveness",
+    "description": "Constructed side channel to provide thermal refuge and rearing habitat for juvenile salmonids.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-121.4123, 39.2876],
+        [-121.4034, 39.2876],
+        [-121.4034, 39.2798],
+        [-121.4123, 39.2798],
+        [-121.4123, 39.2876]
+      ]]
+    }
+  },
+  {
+    "id": "proj-010",
+    "name": "Upper Sacramento Predator Management",
+    "tributarySystem": "Upper Sacramento River",
+    "habitatType": "Predator management",
+    "targetSpecies": ["Winter-run Chinook", "Spring-run Chinook"],
+    "implementingEntity": "U.S. Fish and Wildlife Service",
+    "status": "In Progress",
+    "year": 2024,
+    "areaAcres": 200,
+    "assessmentType": "Consistency",
+    "description": "Non-native predator removal program to reduce predation pressure on juvenile salmon.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-122.4567, 40.7234],
+        [-122.4234, 40.7234],
+        [-122.4234, 40.6876],
+        [-122.4567, 40.6876],
+        [-122.4567, 40.7234]
+      ]]
+    }
+  },
+  {
+    "id": "proj-011",
+    "name": "American River Floodplain Access",
+    "tributarySystem": "American River",
+    "habitatType": "Floodplain restoration",
+    "targetSpecies": ["Fall-run Chinook", "Splittail"],
+    "implementingEntity": "American River Flood Control District",
+    "status": "Planned",
+    "year": 2026,
+    "areaAcres": 67,
+    "assessmentType": "Accounting",
+    "description": "Lower levees to allow seasonal floodplain inundation and juvenile fish access.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-121.2987, 38.5987],
+        [-121.2765, 38.5987],
+        [-121.2765, 38.5765],
+        [-121.2987, 38.5765],
+        [-121.2987, 38.5987]
+      ]]
+    }
+  },
+  {
+    "id": "proj-012",
+    "name": "Feather River Bypass Enhancement",
+    "tributarySystem": "Feather River",
+    "habitatType": "Floodplain restoration",
+    "targetSpecies": ["Spring-run Chinook", "Splittail", "White sturgeon"],
+    "implementingEntity": "California Department of Water Resources",
+    "status": "Completed",
+    "year": 2021,
+    "areaAcres": 210,
+    "assessmentType": "Biological Effectiveness",
+    "description": "Sutter Bypass enhancement to improve juvenile fish rearing conditions during flood events.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-121.6543, 39.1234],
+        [-121.6234, 39.1234],
+        [-121.6234, 39.0876],
+        [-121.6543, 39.0876],
+        [-121.6543, 39.1234]
+      ]]
+    }
+  },
+  {
+    "id": "proj-013",
+    "name": "Mokelumne River Fish Screen Installation",
+    "tributarySystem": "Mokelumne River",
+    "habitatType": "Fish passage",
+    "targetSpecies": ["Fall-run Chinook", "Steelhead"],
+    "implementingEntity": "East Bay Municipal Utility District",
+    "status": "Completed",
+    "year": 2023,
+    "areaAcres": 2,
+    "assessmentType": "Suitability",
+    "description": "Installation of fish screens at water diversion to prevent entrainment of juvenile fish.",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-121.1876, 38.3456]
+    }
+  },
+  {
+    "id": "proj-014",
+    "name": "Delta Predator Hotspot Reduction",
+    "tributarySystem": "Delta",
+    "habitatType": "Predator management",
+    "targetSpecies": ["Delta smelt", "Longfin smelt", "Chinook salmon"],
+    "implementingEntity": "U.S. Bureau of Reclamation",
+    "status": "In Progress",
+    "year": 2025,
+    "areaAcres": 125,
+    "assessmentType": "Consistency",
+    "description": "Habitat modifications to reduce predator concentration areas and improve native fish survival.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-121.7456, 38.1234],
+        [-121.7234, 38.1234],
+        [-121.7234, 38.1012],
+        [-121.7456, 38.1012],
+        [-121.7456, 38.1234]
+      ]]
+    }
+  },
+  {
+    "id": "proj-015",
+    "name": "Tuolumne River Temperature Management",
+    "tributarySystem": "Tuolumne River",
+    "habitatType": "In-channel rearing",
+    "targetSpecies": ["Fall-run Chinook", "Spring-run Chinook"],
+    "implementingEntity": "Modesto Irrigation District",
+    "status": "In Progress",
+    "year": 2024,
+    "areaAcres": 28,
+    "assessmentType": "Suitability",
+    "description": "Riparian restoration and flow augmentation to improve thermal conditions for juvenile salmon.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-121.0234, 37.7123],
+        [-121.0123, 37.7123],
+        [-121.0123, 37.7034],
+        [-121.0234, 37.7034],
+        [-121.0234, 37.7123]
+      ]]
+    }
+  }
+]
