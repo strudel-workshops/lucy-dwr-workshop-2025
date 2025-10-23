@@ -13,6 +13,9 @@ import { createFileRoute } from '@tanstack/react-router';
 // Import Routes
 
 import { Route as rootRoute } from './pages/__root';
+import { Route as ReportsImport } from './pages/reports';
+import { Route as LearningHubImport } from './pages/learning-hub';
+import { Route as AboutImport } from './pages/about';
 import { Route as IndexImport } from './pages/index';
 import { Route as SearchDataRepositoriesIndexImport } from './pages/search-data-repositories/index';
 import { Route as PlaygroundIndexImport } from './pages/playground/index';
@@ -65,6 +68,24 @@ const ContributeDataRoute = ContributeDataImport.update({
 const CompareDataRoute = CompareDataImport.update({
   id: '/compare-data',
   path: '/compare-data',
+  getParentRoute: () => rootRoute,
+} as any);
+
+const ReportsRoute = ReportsImport.update({
+  id: '/reports',
+  path: '/reports',
+  getParentRoute: () => rootRoute,
+} as any);
+
+const LearningHubRoute = LearningHubImport.update({
+  id: '/learning-hub',
+  path: '/learning-hub',
+  getParentRoute: () => rootRoute,
+} as any);
+
+const AboutRoute = AboutImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRoute,
 } as any);
 
@@ -239,6 +260,27 @@ declare module '@tanstack/react-router' {
       path: '/';
       fullPath: '/';
       preLoaderRoute: typeof IndexImport;
+      parentRoute: typeof rootRoute;
+    };
+    '/about': {
+      id: '/about';
+      path: '/about';
+      fullPath: '/about';
+      preLoaderRoute: typeof AboutImport;
+      parentRoute: typeof rootRoute;
+    };
+    '/learning-hub': {
+      id: '/learning-hub';
+      path: '/learning-hub';
+      fullPath: '/learning-hub';
+      preLoaderRoute: typeof LearningHubImport;
+      parentRoute: typeof rootRoute;
+    };
+    '/reports': {
+      id: '/reports';
+      path: '/reports';
+      fullPath: '/reports';
+      preLoaderRoute: typeof ReportsImport;
       parentRoute: typeof rootRoute;
     };
     '/compare-data': {
@@ -564,6 +606,9 @@ const RunComputationRouteWithChildren = RunComputationRoute._addFileChildren(
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute;
+  '/about': typeof AboutRoute;
+  '/learning-hub': typeof LearningHubRoute;
+  '/reports': typeof ReportsRoute;
   '/compare-data': typeof CompareDataLayoutRouteWithChildren;
   '/contribute-data': typeof ContributeDataLayoutRouteWithChildren;
   '/explore-data/$id': typeof ExploreDataIdRoute;
@@ -592,6 +637,9 @@ export interface FileRoutesByFullPath {
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute;
+  '/about': typeof AboutRoute;
+  '/learning-hub': typeof LearningHubRoute;
+  '/reports': typeof ReportsRoute;
   '/compare-data': typeof CompareDataLayoutIndexRoute;
   '/contribute-data': typeof ContributeDataLayoutIndexRoute;
   '/explore-data/$id': typeof ExploreDataIdRoute;
@@ -618,6 +666,9 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRoute;
   '/': typeof IndexRoute;
+  '/about': typeof AboutRoute;
+  '/learning-hub': typeof LearningHubRoute;
+  '/reports': typeof ReportsRoute;
   '/compare-data': typeof CompareDataRouteWithChildren;
   '/compare-data/_layout': typeof CompareDataLayoutRouteWithChildren;
   '/contribute-data': typeof ContributeDataRouteWithChildren;
@@ -652,6 +703,9 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath;
   fullPaths:
     | '/'
+    | '/about'
+    | '/learning-hub'
+    | '/reports'
     | '/compare-data'
     | '/contribute-data'
     | '/explore-data/$id'
@@ -679,6 +733,9 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo;
   to:
     | '/'
+    | '/about'
+    | '/learning-hub'
+    | '/reports'
     | '/compare-data'
     | '/contribute-data'
     | '/explore-data/$id'
@@ -703,6 +760,9 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/about'
+    | '/learning-hub'
+    | '/reports'
     | '/compare-data'
     | '/compare-data/_layout'
     | '/contribute-data'
@@ -736,6 +796,9 @@ export interface FileRouteTypes {
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute;
+  AboutRoute: typeof AboutRoute;
+  LearningHubRoute: typeof LearningHubRoute;
+  ReportsRoute: typeof ReportsRoute;
   CompareDataRoute: typeof CompareDataRouteWithChildren;
   ContributeDataRoute: typeof ContributeDataRouteWithChildren;
   ExploreDataIdRoute: typeof ExploreDataIdRoute;
@@ -751,6 +814,9 @@ export interface RootRouteChildren {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  LearningHubRoute: LearningHubRoute,
+  ReportsRoute: ReportsRoute,
   CompareDataRoute: CompareDataRouteWithChildren,
   ContributeDataRoute: ContributeDataRouteWithChildren,
   ExploreDataIdRoute: ExploreDataIdRoute,
@@ -775,6 +841,9 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
+        "/about",
+        "/learning-hub",
+        "/reports",
         "/compare-data",
         "/contribute-data",
         "/explore-data/$id",
@@ -790,6 +859,15 @@ export const routeTree = rootRoute
     },
     "/": {
       "filePath": "index.tsx"
+    },
+    "/about": {
+      "filePath": "about.tsx"
+    },
+    "/learning-hub": {
+      "filePath": "learning-hub.tsx"
+    },
+    "/reports": {
+      "filePath": "reports.tsx"
     },
     "/compare-data": {
       "filePath": "compare-data",

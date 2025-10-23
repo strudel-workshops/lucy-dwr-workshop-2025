@@ -27,7 +27,6 @@ export const TopBar: React.FC = () => {
           spacing={2}
           sx={{
             alignItems: 'center',
-            flexGrow: 1,
           }}
         >
           <AppLink to="/">
@@ -40,6 +39,31 @@ export const TopBar: React.FC = () => {
           <AppLink to="/">
             <Typography variant="h6" component="div" fontWeight="bold">
               HRL Data Platform
+            </Typography>
+          </AppLink>
+        </Stack>
+        <Stack
+          direction="row"
+          spacing={3}
+          sx={{
+            alignItems: 'center',
+            flexGrow: 1,
+            justifyContent: 'center',
+          }}
+        >
+          <AppLink to="/about">
+            <Typography variant="body1" component="div">
+              About
+            </Typography>
+          </AppLink>
+          <AppLink to="/reports">
+            <Typography variant="body1" component="div">
+              Reports
+            </Typography>
+          </AppLink>
+          <AppLink to="/learning-hub">
+            <Typography variant="body1" component="div">
+              Learning Hub
             </Typography>
           </AppLink>
         </Stack>
