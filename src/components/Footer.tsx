@@ -18,42 +18,33 @@ export const Footer: React.FC = () => {
       <Container>
         <Grid container>
           <Grid item md={6}>
-            <Stack spacing={2}>
-              <Stack
-                direction="row"
-                useFlexGap
-                sx={{
-                  flexWrap: 'wrap',
-                }}
-              >
-                <AppLink to="/">Home</AppLink>
-              </Stack>
+            <Stack
+              direction="row"
+              useFlexGap
+              sx={{
+                flexWrap: 'wrap',
+              }}
+            >
+              <AppLink to="/">Home</AppLink>
+            </Stack>
+          </Grid>
+          <Grid item md={6}>
+            <Stack
+              direction="row"
+              alignItems="center"
+              spacing={2}
+              justifyContent="flex-end"
+            >
+              <Typography>California Department of Water Resources</Typography>
               <Box>
-                <ImageWrapper height={50}>
+                <ImageWrapper height={70}>
                   <img
-                    src={cleanPath(`${import.meta.env.BASE_URL}/dwr-logo.png`)}
-                    alt="California Department of Water Resources"
+                    src={cleanPath(`${import.meta.env.BASE_URL}/dwr-logo.jpg`)}
+                    alt="California Department of Water Resources logo"
                     style={{ objectFit: 'contain' }}
                   />
                 </ImageWrapper>
               </Box>
-            </Stack>
-          </Grid>
-          <Grid item md={6}>
-            <Stack alignItems="center">
-              <Typography>
-                Describe your project, place a copyright statement, or credit
-                your funding organizations.
-              </Typography>
-              <AppLink to="/">
-                <ImageWrapper height={60}>
-                  <img
-                    src={cleanPath(
-                      `${import.meta.env.BASE_URL}/strudel-logo-header.png`
-                    )}
-                  />
-                </ImageWrapper>
-              </AppLink>
             </Stack>
           </Grid>
         </Grid>
