@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
               <Box>
                 <ImageWrapper height={70}>
                   <img
-                    src={cleanPath(`${import.meta.env.BASE_URL}/dwr-logo.jpg`)}
+                    src={cleanPath(`${import.meta.env.BASE_URL}/dwr-logo.png`)}
                     alt="California Department of Water Resources logo"
                     style={{ objectFit: 'contain' }}
                   />
